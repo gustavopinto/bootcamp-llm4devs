@@ -79,7 +79,7 @@ CREATE TABLE IF NOT EXISTS embeddings (
 
 Muito do nosso trabalho será baseado nas APIs da OpenAI. Para isso, você precisa criar uma chave para acessar a [plataforma da OpenAI](https://platform.openai.com/). 
 
-Em seguida, adicione a variavel de ambiente `OPENAI_API_KEY` dentro do arquivo `.env`.
+Em seguida, adicione a variavel de ambiente `OPENAI_API_KEY` dentro do arquivo `.env` (que deve ficar na raiz do projeto).
 
 ```
 OPENAI_API_KEY = "<CHAVE>"
