@@ -91,3 +91,14 @@ Por fim, para garantir que a configuracao foi bem sucedida, rode o seguinte coma
 
 - `python3 $PATH/bootcamp-llm4devs/backend/core/main.py`
 
+## Exercícios pós-bootcamp
+
+Após o bootcamp, para continuar progredindo nos estudos, considere implementar essa lista de exercícios:
+
+- Siga as instruções do BootCamp e implemente uma solução parecida com a que está na branch bootcamp.
+- Teste o exercício do bootcamp com outro modelo  (como o Gemini-pro, mistral, etc). 
+- Busque novas fontes de dados de outros formatos (arquivos PDFs, vídeos do YouTube).
+- Estude como os dados são inseridos no banco. Brinque com os tamanhos e estratégias de chunking.
+- Estudo e implemente diferentes estratégias para limpeza de dados. Pense como essas estratégias podem ser utilizadas em diferentes tipos de dados (considere tipos de dados como XML, JSON, trechos de código, tabelas, etc). 
+
+Ao longo da sua implementação, usse o Discord para discutir suas soluções.
