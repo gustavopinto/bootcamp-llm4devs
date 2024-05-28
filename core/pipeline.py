@@ -3,19 +3,19 @@ from transformer import transform
 from embeddings import embed_docs, embed_doc
 from retriever import store, retrieve
 
-source = "https://pt.wikipedia.org/wiki/Bel%C3%A9m_(Par%C3%A1)"
+# source = "https://llmbootcamp.dev/"
 
-#source_loaded = load(source)
+# source_loaded = load(source)
 
-#sources_transformed = transform(source_loaded[0].page_content)
+# sources_transformed = transform(source_loaded[0].page_content)
 
-#print(len(sources_transformed))
+# print(len(sources_transformed))
 
-#sources_embedded = embed_docs(sources_transformed)
+# sources_embedded = embed_docs(sources_transformed)
 
-#print(len(sources_embedded))
+# print(len(sources_embedded))
 
-#stored = store(sources_transformed, sources_embedded)
+# stored = store(sources_transformed, sources_embedded)
 
 query = embed_doc("onde ir em Belém?")
 
