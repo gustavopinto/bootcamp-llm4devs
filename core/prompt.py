@@ -20,19 +20,28 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 llm = ChatOpenAI(temperature=1)
 
-def chat_llm(user_query):
+def chat_llm(user_query, history):
     prompt = ChatPromptTemplate.from_messages([
-                        ("system", "Eu quero que você atue como um expert em design de código."),
+                        ("system", "Eu quero que você atue como um expert em design de código atuando com criancas."),
                         ("user", "{user_query}"),
+                        ("system", "Para responder a pergunta, considere o historico de conversa: {history}"),
+                        ("system", "Nao precisa começar a responder com 'Pelo histórico da nossa conversa'. Pode responder diretamente."),
+                        ("system", "Em mensagens de apresentacao, se limite a responder em 30 palavras."),
+                        ("system", "Se a pergunta nao for sobre design de codigo, se limite a responder 'Eu não sei'."),
                     ])
 
     chain = prompt | llm
-    response = chain.invoke({"user_query" : user_query})
+    response = chain.invoke({"user_query" : user_query,
+                             "history" : history})
     return response.content
 
+history = []
 
 while True:
     user_query = input("> ")
-    llm_response = chat_llm(user_query)
+    history.append(user_query)
+    llm_response = chat_llm(user_query, history)
+
+    history.append(llm_response)
     print("> ", llm_response)
     
