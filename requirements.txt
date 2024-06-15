@@ -6,3 +6,5 @@ psycopg2==2.9.9
 python-dotenv==1.0.1
 uvicorn==0.29.0
 langchain-text-splitters==0.0.2
+beautifulsoup4==4.12.3
+pypdf==4.2.0
