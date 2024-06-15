@@ -89,7 +89,7 @@ OPENAI_API_KEY = "<CHAVE>"
 
 Por fim, para garantir que a configuracao foi bem sucedida, rode o seguinte comando:
 
-- `python3 $PATH/bootcamp-llm4devs/backend/core/main.py`
+- `python3 $PATH/bootcamp-llm4devs/core/main.py`
 
 ## Exercícios pós-bootcamp
 

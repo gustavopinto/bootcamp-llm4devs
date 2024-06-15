@@ -27,4 +27,4 @@ chat = gr.ChatInterface(
         clear_btn="Limpar",
     )
 
-chat.launch(share=True, server_name="0.0.0.0", server_port=7860)
+chat.launch(share=True, server_name="0.0.0.0", server_port=7860)    
