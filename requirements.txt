@@ -8,3 +8,4 @@ uvicorn==0.29.0
 langchain-text-splitters==0.0.2
 beautifulsoup4==4.12.3
 pypdf==4.2.0
+scipy
