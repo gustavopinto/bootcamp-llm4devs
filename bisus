@@ -1,0 +1,8 @@
+bisus
+
+docker container ls
+
+docker exec -it bootcamp-llm4devs-db-1 /bin/bash
+
+psql -h 127.0.0.1 -U testuser -d vectordb
+
